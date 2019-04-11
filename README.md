@@ -1,6 +1,8 @@
 # Time-Series-Forecasting
 This repository is about Time Series Forecasting in Python. It also includes checking whether the data is stationary or not. The two datasets used are "daily temperature" and "air passengers".
 
+Note:  Some parts have been explained in the comments section of the code
+
 The first part of this repository is to check the stationarity of the dataset and to make it stationary if not.
 
 A stationary process has the property that the mean, variance and autocorrelation structure do not change over time.
