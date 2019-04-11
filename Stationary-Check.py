@@ -18,6 +18,9 @@ Temperature = pd.read_csv('C:\\Users\\faaiz\\Documents\\2 semester\\DDA\\EXC\\QA
 AirPassengers = pd.read_csv('C:\\Users\\faaiz\\Documents\\2 semester\\DDA\\EXC\\QADRI_ex5\\air-passengers\\AirPassengers.csv', header=0,
 	parse_dates=[0], index_col=0, squeeze=True)
 
+# A function has been created to check the stationarity of the time series. The data values have been converted to support the float values, because of the temperature dataset. I also removed the last two rows from the dataset as it was creating problems. Apart from that, ‘?’ in the datasets were also removed. The datasets are divided into two parts to measure if those two parts are similar statistically or not. Mean, variance and standard deviation is calculated for both the datasets. Further, the ‘rolling mean’ and the ‘rolling std’ are calculated through the built-in python function. They are then plotted alongside the real data available. (Below you can see the results.)
+# We can also use Augmented Dickey-Fuller test to test the stationarity of a time series.
+
 def stationary_check(data):
     data.hist()
     plt.show()
